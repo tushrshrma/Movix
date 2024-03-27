@@ -1,0 +1,14 @@
+.genres{
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    .genre{
+        background-color: var(--yellow);
+        font-size: 12px;
+        padding: 4px 6px;
+        border-radius: 4px;
+        color: black;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+}
