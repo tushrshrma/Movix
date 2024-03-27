@@ -6,7 +6,7 @@ import SearchResult from "./pages/SearchResult/SearchResult.jsx";
 import Home from "./pages/home/Home";
 import Explore from "./pages/explore/Explore";
 import Details from "./pages/details/Details";
-import PageNotFound from "./pages/details/PageNotFound";
+import PageNotFound from "./pages/PageNotFound";
 import { useDispatch } from "react-redux";
 import fetchDataFromApi from "./utils/api.js";
 import { getApiConfiguration } from "./store/HomeSlice.js";
