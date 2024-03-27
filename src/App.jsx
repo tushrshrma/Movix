@@ -6,11 +6,10 @@ import SearchResult from "./pages/SearchResult/SearchResult.jsx";
 import Home from "./pages/home/Home";
 import Explore from "./pages/explore/Explore";
 import Details from "./pages/details/Details";
-import ContactUs from "./pages/contactUs/ContactUs.jsx";
+import PageNotFound from "./pages/details/PageNotFound";
 import { useDispatch } from "react-redux";
 import fetchDataFromApi from "./utils/api.js";
 import { getApiConfiguration } from "./store/HomeSlice.js";
-import Feedback from "./pages/Feedback/Feedback.jsx";
 import { getGeners } from "./store/HomeSlice.js";
 
 const App = () => {
@@ -56,10 +55,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:mediaType/:id" element={<Details />} />
+        <Route path="*" element={<PageNotFound />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/feedback" element={<Feedback />} />
       </Routes>
       <Footer />
     </BrowserRouter>
